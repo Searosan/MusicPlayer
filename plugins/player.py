@@ -1259,7 +1259,7 @@ async def upload(client, message):
         file=GET_FILE[url]
         thumb=GET_THUMB.get(url)
         if thumb is None:
-            thumb="https://telegra.ph/file/181242eab5c4a74916d01.jpg"
+            thumb="https://telegra.ph/file/005d734482c966c345c34.jpg"
         response = requests.get(thumb, allow_redirects=True)
         open(f"{playlist[0][5]}.jpeg", 'wb').write(response.content)
         await message.reply_chat_action("upload_document")
@@ -1280,7 +1280,7 @@ async def upload(client, message):
         file=GET_FILE[url]
         thumb=GET_THUMB.get(url)
         if thumb is None:
-            thumb="https://telegra.ph/file/181242eab5c4a74916d01.jpg"
+            thumb="https://telegra.ph/file/005d734482c966c345c34.jpg"
         response = requests.get(thumb, allow_redirects=True)
         open(f"{playlist[0][5]}.jpeg", 'wb').write(response.content)
         await message.reply_chat_action("upload_document")
@@ -1297,7 +1297,7 @@ async def upload(client, message):
             title=playlist[0][1],
             duration=int(float(dur)),
             performer="MusicPlayer",
-            caption=f"<b>Song: [{playlist[0][1]}]({playlist[0][2]})\nUploaded Using [MusicPlayer](https://github.com/subinps/MusicPlayer)</b>"
+            caption=f"<b>Song: [{playlist[0][1]}]({playlist[0][2]})\nUploaded Using [MusicPlayer](https://t.me/osmanibots)</b>"
             )
         await m.delete()
         try:
